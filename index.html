@@ -1,11 +1,128 @@
+<!--            V1          -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- Favicons -->
+        <link rel="icon" href="favicon.ico" sizes="any">
+        <link rel="icon" href="favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <!-- Open Graph Meta Tags for Social Media Sharing -->
+        <meta property="og:title" content="Your Website Title">
+        <meta property="og:description" content="A brief description of your website.">
+        <meta property="og:image" content="https://example.com/image.jpg">
+        <meta property="og:url" content="https://example.com">
+
+        <!-- CSS Reset or Normalize -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <!-- Your Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+    <!-- Your content goes here -->
+
+    <script src="index.js"></script>
+</body>
+</html>
+
+<!--                       V2                      -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Your content goes here -->
+    <div class="container">
+        <h1 id="gallery-title">My Image Gallery</h1>
+        
+        <div id="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://picsum.photos/400/300?random=1" alt="Image 1">
+                <p>Random Found Image 1</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://picsum.photos/400/300?random=2" alt="Image 2">
+                <p>Random Found Image 2</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://picsum.photos/400/300?random=3" alt="Image 3">
+                <p>Random Found Image 3</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://picsum.photos/400/300?random=4" alt="Image 4">
+                <p>Random Found Image 4</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://picsum.photos/400/300?random=5" alt="Image 5">
+                <p>Random Found Image 5</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://picsum.photos/400/300?random=6" alt="Image 6">
+                <p>Random Found Image 6</p>
+            </div>
+        </div>
+        
+        <div id="lightbox" class="lightbox">
+            <span class="close">&times;</span>
+            <img id="lightbox-img" src="" alt="Full size image">
+            <p id="image-caption"></p>
+        </div>
+    </div>
+    
+    <script src="javascript/script.js"></script>
 </body>
 </html>
+
+<!--                       V3                      -->
+                      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4</title>
+     <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Welcome to slideshow</h1>
+    <p>Check out my images below</p>
+
+<div class="list-container">
+    <img class="image" src="images/girl.jpeg" alt="Slide 1">
+    <img class="image" src="images/fogwoods.jpeg" alt="Slide 2">
+    <img class="image" src="images/leaf.jpeg" alt="Slide 3">
+    <img class="image" src="images/harvest.jpeg" alt="Slide 4">
+    <img class="image" src="images/journal.jpeg" alt="Slide 5">
+    <img class="image" src="images/city.jpeg" alt="Slide 6">
+    <img class="image" src="images/morningcoffee.jpeg" alt="Slide 7">
+    <img class="image" src="images/oldcar.jpeg" alt="Slide 8">
+    <img class="image" src="images/yosemite.jpeg" alt="Slide 9">
+    <img class="image" src="images/suplove.jpeg" alt="Slide 10">
+    </div>
+    
+<div class="slideshow-container hidden">
+    <img class="slide" src="images/girl.jpeg" alt="Slide 1">
+    <img class="slide" src="images/fogwoods.jpeg" alt="Slide 2">
+    <img class="slide" src="images/leaf.jpeg" alt="Slide 3">
+    <img class="slide" src="images/harvest.jpeg" alt="Slide 4">
+    <img class="slide" src="images/journal.jpeg" alt="Slide 5">
+    <img class="slide" src="images/city.jpeg" alt="Slide 6">
+    <img class="slide" src="images/morningcoffee.jpeg" alt="Slide 7">
+    <img class="slide" src="images/oldcar.jpeg" alt="Slide 8">
+    <img class="slide" src="images/yosemite.jpeg" alt="Slide 9">
+    <img class="slide" src="images/suplove.jpeg" alt="Slide 10">
+
+    <button class="prev" onclick="changeSlide(-1)">❮</button>
+    <button class="next" onclick="changeSlide(1)">❯</button>
+  </div>
+
+  <script src="javascript/script.js"></script>
+</body>
+</html> 
