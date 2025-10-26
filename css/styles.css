@@ -141,3 +141,137 @@ button {
   color: white;
   border: none;
 }
+
+/*                       V4                     */
+
+/* Reset / base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #000;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Header / nav */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.3); /* semi-transparent nav bar */
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Carousel container */
+.carousel-container {
+  position: relative;
+  margin-top: 80px; /* leave space for fixed header */
+  overflow: hidden;
+}
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+.carousel-slide.active {
+  left: 0;
+  opacity: 1;
+}
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlays (triangles) */
+.overlay-top-left,
+.overlay-bottom-right {
+  position: absolute;
+  pointer-events: none;
+ /* background: rgba(0, 0, 0, 0.6);*/
+}
+.overlay-top-left {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 400px solid rgb(0, 0, 0);
+  border-right: 400px solid transparent;
+}
+.overlay-bottom-right {
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 400px solid rgb(0, 0, 0);
+  border-left: 400px solid transparent;
+}
+
+/* Captions */
+.caption {
+  position: absolute;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  /* places caption over top-left triangle area */
+  top: 20px;
+  left: 20px;
+  max-width: 60%;
+  z-index: 10;
+}
+
+/* Buttons (still want to change arrow style) */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 20;
+}
+.prev-btn {
+  left: 20px;
+}
+.next-btn {
+  right: 20px;
+}
+
+/* Media Queries */
+@media(min-width: 768px) {
+  .caption {
+    font-size: 1.5rem;
+    max-width: 40%;
+  }
+}

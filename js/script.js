@@ -83,3 +83,40 @@ loadSlides()
 // Initial display
 showSlide(currentSlide);
 
+// V2 -------------------------------------------------------
+//
+document.addEventListener("DOMContentLoaded", function () {
+  const slides = document.querySelectorAll(".carousel-slide");
+  const prevBtn = document.querySelector(".prev-btn");
+  const nextBtn = document.querySelector(".next-btn");
+  let current = 0;
+  const total = slides.length;
+
+  function goToSlide(index) {
+    slides.forEach(slide => {
+      slide.classList.remove("active");
+    });
+    slides[index].classList.add("active");
+    current = index;
+  }
+
+  function goNext() {
+    let nextIndex = (current + 1) % total;
+    goToSlide(nextIndex);
+  }
+
+  function goPrev() {
+    let prevIndex = (current - 1 + total) % total;
+    goToSlide(prevIndex);
+  }
+
+  nextBtn.addEventListener("click", goNext);
+  prevBtn.addEventListener("click", goPrev);
+
+  // Optional: auto-play
+  let autoplay = true;
+  let interval = 5000;
+  if (autoplay) {
+    setInterval(goNext, interval);
+  }
+});
