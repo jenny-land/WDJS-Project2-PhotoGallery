@@ -83,7 +83,7 @@ loadSlides()
 // Initial display
 showSlide(currentSlide);
 
-// V2 -------------------------------------------------------
+// V4 -------------------------------------------------------
 //
 document.addEventListener("DOMContentLoaded", function () {
   const slides = document.querySelectorAll(".carousel-slide");
