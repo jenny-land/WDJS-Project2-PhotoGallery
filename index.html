@@ -1,133 +1,3 @@
-<!--            V1          -->
-
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <!-- Favicons -->
-        <link rel="icon" href="favicon.ico" sizes="any">
-        <link rel="icon" href="favicon.svg" type="image/svg+xml">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-        <!-- Open Graph Meta Tags for Social Media Sharing -->
-        <meta property="og:title" content="Your Website Title">
-        <meta property="og:description" content="A brief description of your website.">
-        <meta property="og:image" content="https://example.com/image.jpg">
-        <meta property="og:url" content="https://example.com">
-
-        <!-- CSS Reset or Normalize -->
-        <link rel="stylesheet" href="css/normalize.css">
-        <!-- Your Custom CSS -->
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-<body>
-    <!-- Your content goes here -->
-
-    <script src="index.js"></script>
-</body>
-</html>
-
-<!--                       V2                      -->
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1 id="gallery-title">My Image Gallery</h1>
-        
-        <div id="gallery-grid">
-            <div class="gallery-item">
-                <img src="https://picsum.photos/400/300?random=1" alt="Image 1">
-                <p>Random Found Image 1</p>
-            </div>
-            <div class="gallery-item">
-                <img src="https://picsum.photos/400/300?random=2" alt="Image 2">
-                <p>Random Found Image 2</p>
-            </div>
-            <div class="gallery-item">
-                <img src="https://picsum.photos/400/300?random=3" alt="Image 3">
-                <p>Random Found Image 3</p>
-            </div>
-            <div class="gallery-item">
-                <img src="https://picsum.photos/400/300?random=4" alt="Image 4">
-                <p>Random Found Image 4</p>
-            </div>
-            <div class="gallery-item">
-                <img src="https://picsum.photos/400/300?random=5" alt="Image 5">
-                <p>Random Found Image 5</p>
-            </div>
-            <div class="gallery-item">
-                <img src="https://picsum.photos/400/300?random=6" alt="Image 6">
-                <p>Random Found Image 6</p>
-            </div>
-        </div>
-        
-        <div id="lightbox" class="lightbox">
-            <span class="close">&times;</span>
-            <img id="lightbox-img" src="" alt="Full size image">
-            <p id="image-caption"></p>
-        </div>
-    </div>
-    
-    <script src="javascript/script.js"></script>
-</body>
-</html>
-
-<!--                       V3                      -->
-                      <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab4</title>
-     <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <h1>Welcome to slideshow</h1>
-    <p>Check out my images below</p>
-
-<div class="list-container">
-    <img class="image" src="images/girl.jpeg" alt="Slide 1">
-    <img class="image" src="images/fogwoods.jpeg" alt="Slide 2">
-    <img class="image" src="images/leaf.jpeg" alt="Slide 3">
-    <img class="image" src="images/harvest.jpeg" alt="Slide 4">
-    <img class="image" src="images/journal.jpeg" alt="Slide 5">
-    <img class="image" src="images/city.jpeg" alt="Slide 6">
-    <img class="image" src="images/morningcoffee.jpeg" alt="Slide 7">
-    <img class="image" src="images/oldcar.jpeg" alt="Slide 8">
-    <img class="image" src="images/yosemite.jpeg" alt="Slide 9">
-    <img class="image" src="images/suplove.jpeg" alt="Slide 10">
-    </div>
-    
-<div class="slideshow-container hidden">
-    <img class="slide" src="images/girl.jpeg" alt="Slide 1">
-    <img class="slide" src="images/fogwoods.jpeg" alt="Slide 2">
-    <img class="slide" src="images/leaf.jpeg" alt="Slide 3">
-    <img class="slide" src="images/harvest.jpeg" alt="Slide 4">
-    <img class="slide" src="images/journal.jpeg" alt="Slide 5">
-    <img class="slide" src="images/city.jpeg" alt="Slide 6">
-    <img class="slide" src="images/morningcoffee.jpeg" alt="Slide 7">
-    <img class="slide" src="images/oldcar.jpeg" alt="Slide 8">
-    <img class="slide" src="images/yosemite.jpeg" alt="Slide 9">
-    <img class="slide" src="images/suplove.jpeg" alt="Slide 10">
-
-    <button class="prev" onclick="changeSlide(-1)">❮</button>
-    <button class="next" onclick="changeSlide(1)">❯</button>
-  </div>
-
-  <script src="javascript/script.js"></script>
-</body>
-</html> 
-
-<!--                       V4                      -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -152,102 +22,283 @@
 
   <main>
     <section class="carousel-container">
-      <div class="carousel">
-        <div class="carousel-slide active" data-index="0">
-          <img src="images/cars/red/red1.jpg" alt="Slide 1" />
+      <div class="carousel" id="carousel">
+        <!-- Red Cars -->
+        <div class="carousel-slide" data-category="red" data-index="0">
+          <img src="images/cars/red/red1.jpg" alt="Red Car A" />
           <div class="overlay-top-left"></div>
           <div class="overlay-bottom-right"></div>
           <div class="caption">Red Car A</div>
         </div>
-        <div class="carousel-slide" data-index="1">
-          <img src="images/cars/red/red2.jpg" alt="Slide 2" />
+        <div class="carousel-slide" data-category="red" data-index="1">
+          <img src="images/cars/red/red2.jpg" alt="Red Car B" />
           <div class="overlay-top-left"></div>
           <div class="overlay-bottom-right"></div>
           <div class="caption">Red Car B</div>
         </div>
-        <div class="carousel-slide" data-index="2">
-          <img src="images/cars/red/red14.jpg" alt="Slide 3" />
+        <div class="carousel-slide" data-category="red" data-index="2">
+          <img src="images/cars/red/red3.jpg" alt="Red Car C" />
           <div class="overlay-top-left"></div>
           <div class="overlay-bottom-right"></div>
           <div class="caption">Red Car C</div>
         </div>
-             <div class="carousel-slide" data-index="3">
-          <img src="images/cars/red/red3.jpg" alt="Slide 4" />
+        <div class="carousel-slide" data-category="red" data-index="3">
+          <img src="images/cars/red/red4.jpg" alt="Red Car D" />
           <div class="overlay-top-left"></div>
           <div class="overlay-bottom-right"></div>
           <div class="caption">Red Car D</div>
-        </div>     
-        <div class="carousel-slide" data-index="4">
-          <img src="images/cars/red/red4.jpg" alt="Slide 5" />
+        </div>
+        <div class="carousel-slide" data-category="red" data-index="4">
+          <img src="images/cars/red/red5.jpg" alt="Red Car E" />
           <div class="overlay-top-left"></div>
           <div class="overlay-bottom-right"></div>
           <div class="caption">Red Car E</div>
         </div>
-             <div class="carousel-slide" data-index="5">
-          <img src="images/cars/red/red5.jpg" alt="Slide 6" />
+        <div class="carousel-slide" data-category="red" data-index="5">
+          <img src="images/cars/red/red6.jpg" alt="Red Car F" />
           <div class="overlay-top-left"></div>
           <div class="overlay-bottom-right"></div>
           <div class="caption">Red Car F</div>
         </div>
-             <div class="carousel-slide" data-index="6">
-          <img src="images/cars/red/red6.jpg" alt="Slide 7" />
+        <div class="carousel-slide" data-category="red" data-index="6">
+          <img src="images/cars/red/red7.jpg" alt="Red Car G" />
           <div class="overlay-top-left"></div>
           <div class="overlay-bottom-right"></div>
           <div class="caption">Red Car G</div>
         </div>
-             <div class="carousel-slide" data-index="7">
-          <img src="images/cars/red/red7.jpg" alt="Slide 8" />
+        <div class="carousel-slide" data-category="red" data-index="7">
+          <img src="images/cars/red/red8.jpg" alt="Red Car H" />
           <div class="overlay-top-left"></div>
           <div class="overlay-bottom-right"></div>
           <div class="caption">Red Car H</div>
         </div>
-             <div class="carousel-slide" data-index="8">
-          <img src="images/cars/red/red8.jpg" alt="Slide 9" />
+        <div class="carousel-slide" data-category="red" data-index="8">
+          <img src="images/cars/red/red9.jpg" alt="Red Car I" />
           <div class="overlay-top-left"></div>
           <div class="overlay-bottom-right"></div>
           <div class="caption">Red Car I</div>
         </div>
-             <div class="carousel-slide" data-index="9">
-          <img src="images/cars/red/red9.jpg" alt="Slide 10" />
+        <div class="carousel-slide" data-category="red" data-index="9">
+          <img src="images/cars/red/red10.jpg" alt="Red Car J" />
           <div class="overlay-top-left"></div>
           <div class="overlay-bottom-right"></div>
           <div class="caption">Red Car J</div>
         </div>
-             <div class="carousel-slide" data-index="10">
-          <img src="images/cars/red/red10.jpg" alt="Slide 11" />
+        <div class="carousel-slide" data-category="red" data-index="10">
+          <img src="images/cars/red/red11.jpg" alt="Red Car K" />
           <div class="overlay-top-left"></div>
           <div class="overlay-bottom-right"></div>
           <div class="caption">Red Car K</div>
         </div>
-             <div class="carousel-slide" data-index="11">
-          <img src="images/cars/red/red11.jpg" alt="Slide 12" />
+        <div class="carousel-slide" data-category="red" data-index="11">
+          <img src="images/cars/red/red12.jpg" alt="Red Car L" />
           <div class="overlay-top-left"></div>
           <div class="overlay-bottom-right"></div>
           <div class="caption">Red Car L</div>
         </div>
-             <div class="carousel-slide" data-index="12">
-          <img src="images/cars/red/red12.jpg" alt="Slide 13" />
+        <div class="carousel-slide" data-category="red" data-index="12">
+          <img src="images/cars/red/red13.jpg" alt="Red Car M" />
           <div class="overlay-top-left"></div>
           <div class="overlay-bottom-right"></div>
           <div class="caption">Red Car M</div>
         </div>
-             <div class="carousel-slide" data-index="13">
-          <img src="images/cars/red/red13.jpg" alt="Slide 14" />
+        <div class="carousel-slide" data-category="red" data-index="13">
+          <img src="images/cars/red/red14.jpg" alt="Red Car N" />
           <div class="overlay-top-left"></div>
           <div class="overlay-bottom-right"></div>
           <div class="caption">Red Car N</div>
+        </div>
+
+        <!-- White Cars -->
+        <div class="carousel-slide" data-category="white" data-index="0">
+          <img src="images/cars/white/white1.jpg" alt="White Car A" />
+          <div class="overlay-top-left"></div>
+          <div class="overlay-bottom-right"></div>
+          <div class="caption">White Car A</div>
+        </div>
+        <div class="carousel-slide" data-category="white" data-index="1">
+          <img src="images/cars/white/white2.jpg" alt="White Car B" />
+          <div class="overlay-top-left"></div>
+          <div class="overlay-bottom-right"></div>
+          <div class="caption">White Car B</div>
+        </div>
+        <div class="carousel-slide" data-category="white" data-index="2">
+          <img src="images/cars/white/white3.jpg" alt="White Car C" />
+          <div class="overlay-top-left"></div>
+          <div class="overlay-bottom-right"></div>
+          <div class="caption">White Car C</div>
+        </div>
+        <div class="carousel-slide" data-category="white" data-index="3">
+          <img src="images/cars/white/white4.jpg" alt="White Car D" />
+          <div class="overlay-top-left"></div>
+          <div class="overlay-bottom-right"></div>
+          <div class="caption">White Car D</div>
+        </div>
+        <div class="carousel-slide" data-category="white" data-index="4">
+          <img src="images/cars/white/white5.jpg" alt="White Car E" />
+          <div class="overlay-top-left"></div>
+          <div class="overlay-bottom-right"></div>
+          <div class="caption">White Car E</div>
+        </div>
+        <div class="carousel-slide" data-category="white" data-index="5">
+          <img src="images/cars/white/white6.jpg" alt="White Car F" />
+          <div class="overlay-top-left"></div>
+          <div class="overlay-bottom-right"></div>
+          <div class="caption">White Car F</div>
+        </div>
+        <div class="carousel-slide" data-category="white" data-index="6">
+          <img src="images/cars/white/white7.jpg" alt="White Car G" />
+          <div class="overlay-top-left"></div>
+          <div class="overlay-bottom-right"></div>
+          <div class="caption">White Car G</div>
+        </div>
+        <div class="carousel-slide" data-category="white" data-index="7">
+          <img src="images/cars/white/white8.jpg" alt="White Car H" />
+          <div class="overlay-top-left"></div>
+          <div class="overlay-bottom-right"></div>
+          <div class="caption">White Car H</div>
+        </div>
+        <div class="carousel-slide" data-category="white" data-index="8">
+          <img src="images/cars/white/white9.jpg" alt="White Car I" />
+          <div class="overlay-top-left"></div>
+          <div class="overlay-bottom-right"></div>
+          <div class="caption">White Car I</div>
+        </div>
+        <div class="carousel-slide" data-category="white" data-index="9">
+          <img src="images/cars/white/white10.jpg" alt="White Car J" />
+          <div class="overlay-top-left"></div>
+          <div class="overlay-bottom-right"></div>
+          <div class="caption">White Car J</div>
+        </div>
+        <div class="carousel-slide" data-category="white" data-index="10">
+          <img src="images/cars/white/white11.jpg" alt="White Car K" />
+          <div class="overlay-top-left"></div>
+          <div class="overlay-bottom-right"></div>
+          <div class="caption">White Car K</div>
+        </div>
+        <div class="carousel-slide" data-category="white" data-index="11">
+          <img src="images/cars/white/white12.jpg" alt="White Car L" />
+          <div class="overlay-top-left"></div>
+          <div class="overlay-bottom-right"></div>
+          <div class="caption">White Car L</div>
+        </div>
+        <div class="carousel-slide" data-category="white" data-index="12">
+          <img src="images/cars/white/white13.jpg" alt="White Car M" />
+          <div class="overlay-top-left"></div>
+          <div class="overlay-bottom-right"></div>
+          <div class="caption">White Car M</div>
+        </div>
+        <div class="carousel-slide" data-category="white" data-index="13">
+          <img src="images/cars/white/white14.jpg" alt="White Car N" />
+          <div class="overlay-top-left"></div>
+          <div class="overlay-bottom-right"></div>
+          <div class="caption">White Car N</div>
+        </div>
+
+        <!-- Yellow Cars -->
+        <div class="carousel-slide" data-category="yellow" data-index="0">
+          <img src="images/cars/yellow/yellow1.jpg" alt="Yellow Car A" />
+          <div class="overlay-top-left"></div>
+          <div class="overlay-bottom-right"></div>
+          <div class="caption">Yellow Car A</div>
+        </div>
+        <div class="carousel-slide" data-category="yellow" data-index="1">
+          <img src="images/cars/yellow/yellow2.jpg" alt="Yellow Car B" />
+          <div class="overlay-top-left"></div>
+          <div class="overlay-bottom-right"></div>
+          <div class="caption">Yellow Car B</div>
+        </div>
+        <div class="carousel-slide" data-category="yellow" data-index="2">
+          <img src="images/cars/yellow/yellow3.jpg" alt="Yellow Car C" />
+          <div class="overlay-top-left"></div>
+          <div class="overlay-bottom-right"></div>
+          <div class="caption">Yellow Car C</div>
+        </div>
+        <div class="carousel-slide" data-category="yellow" data-index="3">
+          <img src="images/cars/yellow/yellow4.jpg" alt="Yellow Car D" />
+          <div class="overlay-top-left"></div>
+          <div class="overlay-bottom-right"></div>
+          <div class="caption">Yellow Car D</div>
+        </div>
+        <div class="carousel-slide" data-category="yellow" data-index="4">
+          <img src="images/cars/yellow/yellow5.jpg" alt="Yellow Car E" />
+          <div class="overlay-top-left"></div>
+          <div class="overlay-bottom-right"></div>
+          <div class="caption">Yellow Car E</div>
+        </div>
+        <div class="carousel-slide" data-category="yellow" data-index="5">
+          <img src="images/cars/yellow/yellow6.jpg" alt="Yellow Car F" />
+          <div class="overlay-top-left"></div>
+          <div class="overlay-bottom-right"></div>
+          <div class="caption">Yellow Car F</div>
+        </div>
+        <div class="carousel-slide" data-category="yellow" data-index="6">
+          <img src="images/cars/yellow/yellow7.jpg" alt="Yellow Car G" />
+          <div class="overlay-top-left"></div>
+          <div class="overlay-bottom-right"></div>
+          <div class="caption">Yellow Car G</div>
+        </div>
+        <div class="carousel-slide" data-category="yellow" data-index="7">
+          <img src="images/cars/yellow/yellow8.jpg" alt="Yellow Car H" />
+          <div class="overlay-top-left"></div>
+          <div class="overlay-bottom-right"></div>
+          <div class="caption">Yellow Car H</div>
+        </div>
+        <div class="carousel-slide" data-category="yellow" data-index="8">
+          <img src="images/cars/yellow/yellow9.jpg" alt="Yellow Car I" />
+          <div class="overlay-top-left"></div>
+          <div class="overlay-bottom-right"></div>
+          <div class="caption">Yellow Car I</div>
+        </div>
+        <div class="carousel-slide" data-category="yellow" data-index="9">
+          <img src="images/cars/yellow/yellow10.jpg" alt="Yellow Car J" />
+          <div class="overlay-top-left"></div>
+          <div class="overlay-bottom-right"></div>
+          <div class="caption">Yellow Car J</div>
+        </div>
+        <div class="carousel-slide" data-category="yellow" data-index="10">
+          <img src="images/cars/yellow/yellow11.jpg" alt="Yellow Car K" />
+          <div class="overlay-top-left"></div>
+          <div class="overlay-bottom-right"></div>
+          <div class="caption">Yellow Car K</div>
+        </div>
+        <div class="carousel-slide" data-category="yellow" data-index="11">
+          <img src="images/cars/yellow/yellow12.jpg" alt="Yellow Car L" />
+          <div class="overlay-top-left"></div>
+          <div class="overlay-bottom-right"></div>
+          <div class="caption">Yellow Car L</div>
+        </div>
+        <div class="carousel-slide" data-category="yellow" data-index="12">
+          <img src="images/cars/yellow/yellow13.jpg" alt="Yellow Car M" />
+          <div class="overlay-top-left"></div>
+          <div class="overlay-bottom-right"></div>
+          <div class="caption">Yellow Car M</div>
+        </div>
+        <div class="carousel-slide" data-category="yellow" data-index="13">
+          <img src="images/cars/yellow/yellow14.jpg" alt="Yellow Car N" />
+          <div class="overlay-top-left"></div>
+          <div class="overlay-bottom-right"></div>
+          <div class="caption">Yellow Car N</div>
+        </div>
       </div>
-      <button class="carousel-btn prev-btn">&lt;</button>
-      <button class="carousel-btn next-btn">&gt;</button>
+      
+      <button class="carousel-btn prev-btn" aria-label="Previous slide">&lt;</button>
+      <button class="carousel-btn next-btn" aria-label="Next slide">&gt;</button>
+    </section>
+
+    <section class="category-switcher">
+      <button class="category-btn red-btn active" data-category="red">Red Cars</button>
+      <button class="category-btn white-btn" data-category="white">White Cars</button>
+      <button class="category-btn yellow-btn" data-category="yellow">Yellow Cars</button>
     </section>
   </main>
 
   <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 JL Designs</p>
-            <p>This website is fictional and created for a Web Design class at Diablo Valley College as part of a class project. I'm learning to build a portfolio demonstrates advanced HTML5, CSS3, responsive design, and accessibility best practices. Built with modern web standards and optimized for performance across all devices.</p>
-        </div>
-    </footer>
+    <div class="footer-content">
+      <p>&copy; 2025 JL Designs</p>
+      <p>This website is fictional and created for a Web Design class at Diablo Valley College as part of a class project. I'm learning to build a portfolio that demonstrates advanced HTML5, CSS3, responsive design, and accessibility best practices. Built with modern web standards and optimized for performance across all devices.</p>
+    </div>
+  </footer>
 
   <script src="javascript/script.js"></script>
 </body>

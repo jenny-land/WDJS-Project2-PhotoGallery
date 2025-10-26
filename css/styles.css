@@ -88,7 +88,7 @@ a {
   object-fit: cover;
 }
 
-/* No JavaScript fallback - grid layout */
+/* No JavaScript fallback view - grid layout */
 .carousel {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -113,7 +113,7 @@ a {
   display: block;
 }
 
-/* Overlays (triangles) - only visible in carousel mode */
+/* Overlays (triangles) -js carousel mode */
 .overlay-top-left,
 .overlay-bottom-right {
   position: absolute;
